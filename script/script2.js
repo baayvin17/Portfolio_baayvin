@@ -1,3 +1,4 @@
+// <!--mode sombre avec script js-->
 const toggleButton = document.getElementById('toggle');
 const body = document.body;
 
