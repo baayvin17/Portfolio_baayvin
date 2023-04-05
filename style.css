@@ -238,10 +238,3 @@ body.dark-mode {
 }
 
 
-@media (max-width: 767px) {
-    /* Styles for phones */
-  }
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-    /* Styles for tablets */
-  } 
