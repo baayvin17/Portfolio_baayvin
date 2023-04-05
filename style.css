@@ -1,4 +1,4 @@
-/* hero background image */
+/* background image */
 .bgimage {
     height:100vh;
     background: url('images/perceptual-standard.jpg');
@@ -9,11 +9,12 @@
 
 
 
-/* text css above hero image*/
+
+/* text css */
 .hero_title {
     font-size: 4.5rem;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;  
 font-family: 'Permanent Marker', cursive;
 font-family: 'Varela Round', sans-serif;
 }
@@ -26,7 +27,7 @@ font-family: 'Varela Round', sans-serif;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .nav-link {
     display: block;
@@ -84,6 +85,10 @@ font-family: 'Varela Round', sans-serif;
 #footer {
     background-color: #808080;
     text-align: center;
+    padding-right: var(--bs-gutter-x,.75rem);
+    width: 100%;
+    
+    
 }
 /* spacing on all sections */
 #about, #services, #portfolio, #contact {
@@ -110,18 +115,7 @@ font-family: 'Permanent Marker', cursive;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* mode sombrbe*/
 
 body {
 	background-color: #f1f1f1;
@@ -131,7 +125,7 @@ body {
 
 body.dark-mode {
 	background-color: #333333;
-	color: #f1f1f1;
+	color: #137db6;
 }
 
 .toggle-container {
@@ -231,7 +225,8 @@ body.dark-mode {
     top: 5px;
     right: 20px;
     color: #c0a347;
-    font-size: 16px;
+    font-size: 17px;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 #date {
@@ -241,3 +236,12 @@ body.dark-mode {
 #time {
     margin: 0;
 }
+
+
+@media (max-width: 767px) {
+    /* Styles for phones */
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for tablets */
+  } 
