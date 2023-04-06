@@ -8,8 +8,6 @@
 }
 
 
-
-
 /* text css */
 .hero_title {
     font-size: 4.5rem;
@@ -42,35 +40,41 @@ font-family: 'Varela Round', sans-serif;
 
 }
 
-    .navbar-nav ms-auto{
-        color: aliceblue;
+   /* Style de la barre de navigation */
+.navbar-nav ms-auto {
+    color: aliceblue;
     }
-
-/* services section css */
-.servicesText.card {
-    height: 280px;  
+    
+    /* Style de la section "services" */
+    .servicesText.card {
+    height: 280px;
     cursor: pointer;
-  }
-.servicesIcon {
+    }
+    .servicesIcon {
     font-size: 36px;
     text-align: center;
     width: 100%;
-}
-
-.card-title {
+    }
+    
+    .card-title {
     text-align: center;
-}
-.card:hover .servicesIcon {
+    }
+    
+    /*  changement de couleur de l'icône des services */
+    .card:hover .servicesIcon {
     color: #0b5674;
-}
-.servicesText:hover {
+    }
+    
+    /* ajout d'une bordure */
+    .servicesText:hover {
     border: 1px solid #d2ffd2;
-}
-/* display background color black on navbar scroll */
-.navbarScroll.navbarDark {
+    }
+    
+    /* Style de la barre de navigation au scroll */
+    .navbarScroll.navbarDark {
     background-color: black;
-}
-/* social media icons styling */
+    }
+/* style icon média */
 .social-icons {
     font-size: 36px;
     cursor: pointer;
@@ -81,7 +85,7 @@ font-family: 'Varela Round', sans-serif;
 .fab {
     color: #000000;
 }
-/* footer styling */
+/* footer style */
 #footer {
     background-color: #808080;
     text-align: center;
@@ -90,7 +94,7 @@ font-family: 'Varela Round', sans-serif;
     
     
 }
-/* spacing on all sections */
+/* espace entre chaque catégorie */
 #about, #services, #portfolio, #contact {
     margin-top: 4rem;
     padding-top: 4rem;
@@ -120,23 +124,23 @@ font-family: 'Permanent Marker', cursive;
 body {
 	background-color: #f1f1f1;
 	color: #333;
-	transition: all 0.3s;
+	transition: all 1.0s;
 }
 
 body.dark-mode {
 	background-color: #333333;
 	color: #137db6;
 }
-
+/* Le conteneur pour l'interrupteur à bascule */
 .toggle-container {
 	display: inline-block;
 	position: relative;
 }
-
+/* Masquer l'entrée de case à cocher */
 .toggle-container input[type="checkbox"] {
 	display: none;
 }
-
+/* La piste de l'interrupteur */
 .switch {
 	position: absolute;
 	top: 0;
@@ -144,9 +148,9 @@ body.dark-mode {
 	bottom: 0;
 	background-color: #ccc;
 	border-radius: 15px;
-	transition: all 0.3s;
+	transition: all 1.0s;
 }
-
+/* Le bouton de l'interrupteur */
 .switch::before {
 	content: "";
 	position: absolute;
@@ -161,26 +165,42 @@ body.dark-mode {
 	transition: all 0.3s;
 }
 
+/* Déplacer le bouton de l'interrupteur vers la droite et changer sa couleur lorsqu'il est coché */
 .toggle-container input[type="checkbox"]:checked + .switch::before {
 	transform: translate(30px,-50%);
 	background-color: #0d6efd;
 }
 
-.switch::after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 10px; 
-	transform: translateY(-50%);
-	font-size: 14px;
-	color: #fff;
-	opacity: 0;
-	transition: all 0.3s;
+
+/* Style pour les liens de la barre de navigation */
+.navbar-nav li {
+    margin: 0 10px;
+    position: relative;
 }
 
-.toggle-container input[type="checkbox"]:checked + .switch::after {
-	opacity: 1;
+.navbar-nav li a {
+    color: rgb(10, 88, 202);;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
+
+/* Style pour les effets  des liens */
+.navbar-nav li a:hover {
+    background-color: #eee;
+    color: rgb(10, 88, 202);;
+    border-radius: 5px;
+}
+
+/* Style pour les effets de clic des liens */
+.navbar-nav li a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #ccc;
+}
+
 
 
 /* Barre de recherche */
@@ -191,7 +211,7 @@ body.dark-mode {
     margin-right: auto;
     margin-left: 70px;
 }
-
+/*  barre cherhce */
 .search-box input {
     height: 40px;
     width: 200px;
@@ -202,7 +222,7 @@ body.dark-mode {
     font-size: 16px;
     background-color: #f2f2f2;
 }
-
+/* bulle loupe */
 .search-box button {
     height: 40px;
     width: 40px;
@@ -241,7 +261,7 @@ body.dark-mode {
 /* button */ 
 
 .button {
-    border: none;
+    border: none;   /* Supprime la bordure du bouton */
     display: block;
     text-align: center;
     cursor: pointer;
@@ -252,29 +272,31 @@ body.dark-mode {
     color: #eeeeee;
     font-weight: 600;
     font-size: 15px;
-    background-color: #05172d94;
+    background-color: #3b3b3b94;
     padding: 10px 10px;
     margin: 0 auto;
   }
-  .button span {
+  .button span { /*  styles pour les éléments span à l'intérieur du bouton*/
     position: relative;
     z-index: 1;
   }
-  .button:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 470%;
-    width: 140%;
-    background: #0c3a56;
-    -webkit-transition: all 0.5s ease-in-out;
+  /* Styles pour l'élément pseudo-élément after */
+.button:after {
+    content: ""; 
+    position: absolute; /*pour être positionné par rapport à l'autre */
+    left: 0; 
+    top: 0; 
+    height: 470%; 
+    width: 140%; 
+    background: #0c3a56; 
+    -webkit-transition: all 0.5s ease-in-out; /* transition de toutes les propriétés avec une durée de 0,5s */
     transition: all 0.5s ease-in-out;
-    -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+    -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg); /* transformation pour déplacer l'élément hors de la vue et le faire pivoter à 45 degrés */
     transform: translateX(-100%) translateY(-25%) rotate(45deg);
-  }
-  .button:hover:after {
-    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-    transform: translateX(-9%) translateY(-25%) rotate(45deg);
-  }
+}
 
+/* Styles pour les effets de survol de l'élément */
+.button:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg); /* transformation pour déplacer l'élément vers la droite et le faire pivoter à 45 degrés */
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
