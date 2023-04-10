@@ -295,7 +295,7 @@ body.dark-mode {
     transform: translateX(-100%) translateY(-25%) rotate(45deg);
 }
 
-/* Styles pour les effets de survol de l'élément */
+/* Styles pour les effets de survol de l'élément bouton VOIR*/
 .button:hover:after {
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg); /* transformation pour déplacer l'élément vers la droite et le faire pivoter à 45 degrés */
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
