@@ -203,41 +203,6 @@ body.dark-mode {
 
 
 
-/* Barre de recherche */
-
-.search-box {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-    margin-left: 70px;
-}
-/*  barre cherhce */
-.search-box input {
-    height: 40px;
-    width: 200px;
-    border-radius: 20px;
-    padding: 5px 20px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    background-color: #f2f2f2;
-}
-/* bulle loupe */
-.search-box button {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-left: 10px;
-    border: none;
-    outline: none;
-    background-color: #f2f2f2;
-}
-
-.search-button i {
-    font-size: 20px;
-    color: #333;
-}
-
 /* Heure et Date */
 
   .date-time {
