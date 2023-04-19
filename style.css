@@ -41,39 +41,12 @@ font-family: 'Varela Round', sans-serif;
 }
 
    /* Style de la barre de navigation */
-.navbar-nav ms-auto {
-    color: aliceblue;
-    }
-    
-    /* Style de la section "services" */
-    .servicesText.card {
-    height: 280px;
-    cursor: pointer;
-    }
-    .servicesIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
-    }
-    
+
     .card-title {
     text-align: center;
     }
     
-    /*  changement de couleur de l'icône des services */
-    .card:hover .servicesIcon {
-    color: #0b5674;
-    }
-    
-    /* ajout d'une bordure */
-    .servicesText:hover {
-    border: 1px solid #d2ffd2;
-    }
-    
-    /* Style de la barre de navigation au scroll */
-    .navbarScroll.navbarDark {
-    background-color: black;
-    }
+  
 /* style icon média */
 .social-icons {
     font-size: 36px;
@@ -111,13 +84,13 @@ font-family: 'Varela Round', sans-serif;
     position:relative;
 
 }
+
+/* logo baayvin */
 .navbar-brand{
     font-family: 'Open Sans', sans-serif;
 font-family: 'Permanent Marker', cursive;
 
 }
-
-
 
 /* mode sombrbe*/
 
@@ -126,7 +99,7 @@ body {
 	color: #333;
 	transition: all 1.0s;
 }
-
+/*texte*/
 body.dark-mode {
 	background-color: #333333;
 	color: #137db6;
@@ -140,17 +113,8 @@ body.dark-mode {
 .toggle-container input[type="checkbox"] {
 	display: none;
 }
-/* La piste de l'interrupteur */
-.switch {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	background-color: #ccc;
-	border-radius: 15px;
-	transition: all 1.0s;
-}
-/* Le bouton de l'interrupteur */
+
+/* Le bouton de l'interrupteur avant */
 .switch::before {
 	content: "";
 	position: absolute;
@@ -199,27 +163,6 @@ body.dark-mode {
 .navbar-nav li a:focus {
     outline: none;
     box-shadow: 0 0 0 3px #ccc;
-}
-
-
-
-/* Heure et Date */
-
-  .date-time {
-    position: absolute;
-    top: 5px;
-    right: 20px;
-    color: #c0a347;
-    font-size: 17px;
-    font-family: 'Rajdhani', sans-serif;
-}
-
-#date {
-    margin: 0;
-}
-
-#time {
-    margin: 0;
 }
 
 
